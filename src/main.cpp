@@ -44,6 +44,8 @@ int main() {
                 }
             }
         }
+
+        /*
         for (int y = 0; y < MAPSIZE; y++) {
             for (int x = 0; x < MAPSIZE; x++) {
                 bool characterFound = false;
@@ -60,6 +62,7 @@ int main() {
             }
             std::cout << std::endl;
         }
+        */
         for (int i = 0; i < NUMBEROFPEOPLE; i++) {
             characters[i].CheckState();
             outFile << characters[i].GetMood().x;

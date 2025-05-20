@@ -1,6 +1,6 @@
 #pragma once
-#define MAPSIZE 16
-#define NUMBEROFPEOPLE 32
+#define MAPSIZE 10
+#define NUMBEROFPEOPLE 25
 
 enum Direction {
     NONE,

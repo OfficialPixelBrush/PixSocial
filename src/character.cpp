@@ -36,7 +36,7 @@ void Character::Move() {
     std::uniform_real_distribution<double> PosDist(NONE, MAX_DIRECTIONS);
     std::uniform_real_distribution<double> PosChangeChance(-1.0, 1.0);
     // If the mood is good enough, change the movement state
-    if (this->personality.x + 1.0 > 1.0) {
+    if (this->personality.x > PosChangeChance(mt)) {
         movementDirection = (int)PosDist(mt);
     }
     switch(movementDirection) {
